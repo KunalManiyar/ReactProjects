@@ -1,0 +1,320 @@
+/* * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "josefin Sans", "Arial Narrow";
+
+}
+
+.header {
+    width: 100%;
+    line-height: 100px;
+    background-color: #f5ba13;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 50px;
+    color: white;
+    box-shadow: 5px 3px 15px -5px rgba (0, 0, 0, 0.3);
+}
+
+.main_note {
+    width: 500px;
+    padding: 15px 10px 5px 10px;
+    margin: 20px auto;
+}
+
+.my_notes h1 {
+    color: #34495e;
+}
+
+.my_notes p {
+    color: grey;
+}
+
+form {
+    min-height: 50px;
+    color: #ecf0f1;
+    padding: 15px 10px 5px 10px;
+    box-shadow: 3px 5px 15px -5px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    position: relative;
+
+}
+
+input {
+    width: 100%;
+    line-height: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    line-height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.MuiButton-root {
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    bottom: -28px;
+    left: 400px;
+    cursor: pointer;
+    background-color: #fff !important;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    border-radius: 50% !important;
+}
+
+.MuiButton-root .plus_sign {
+    font-size: 45px !important;
+    font-weight: 900;
+    color: #f4b400;
+    cursor: pointer;
+    z-index: 222;
+    background: transparent;
+}
+
+.MuiButton-root:hover {
+    background: #f4b400 !important;
+}
+
+.MuiButton-root:hover .plus_sign {
+    color: #fff;
+    background: transparent
+}
+
+.note {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px;
+    width: 240px;
+    margin: 16px;
+    float: left;
+}
+
+.note h1 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+}
+
+.note p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.note .btn {
+    position: relative;
+    float: right;
+    margin-right: 10px;
+
+    color: #f5ba13;
+    border: none;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 3px 3px 15px -10px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+.deleteIcon {
+    width: 0.7em;
+    height: 0.7em;
+
+}
+
+.note .btn:hover {
+    background-color: #f5ba13;
+}
+
+.note .btn:hover .deleteIcon {
+    color: #fff;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+
+} */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans',
+        sans-serif;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.header {
+    width: 100%;
+    line-height: 5rem;
+    background-color: rgb(226, 226, 43);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 4rem;
+
+}
+
+.header img {
+    margin-right: 2rem;
+}
+
+.header h1 {
+    color: white;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    line-height: 4rem;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+}
+
+.main-note {
+    position: absolute;
+    left: 50%;
+    top: 10rem;
+    transform: translateX(-50%);
+    height: 30vh;
+    width: 20vw;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    box-shadow: 3px 7px 16px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 3px 7px 16px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 7px 16px 0px rgba(0, 0, 0, 0.75);
+}
+
+.main-note form {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-note input {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    margin: 1rem;
+    font-size: 2rem;
+    font-weight: 200;
+    color: black;
+    width: 90%;
+}
+
+.main-note textarea {
+    width: 90%;
+    margin: 0 1rem;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.addBtn {
+    position: absolute;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background: white;
+    display: grid;
+    place-items: center;
+    border: none;
+    box-shadow: 3px 7px 16px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 3px 7px 16px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 7px 16px 0px rgba(0, 0, 0, 0.75);
+    background-color: yellow;
+    top: 17rem;
+    left: 24rem;
+}
+
+.addBtn:hover {
+    background: white;
+}
+
+.addBtn:hover .addIcon {
+    color: yellow;
+}
+
+.addIcon {
+    color: white;
+    font-size: 4rem;
+}
+
+.allNotes {
+    position: absolute;
+    top: 55%;
+    display: flex;
+}
+
+.note {
+    margin-left: 1rem;
+    height: 12rem;
+    width: 18rem;
+    box-shadow: 3px 7px 16px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 3px 7px 16px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 7px 16px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.note h1 {
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.note p {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.deleteBtn {
+    color: red;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background: rgb(240, 91, 91);
+    border: none;
+    position: absolute;
+    top: 80%;
+    left: 90%;
+}
+
+.deleteBtn:hover {
+    transform: scale(1.1);
+    background-color: #fff;
+}
+
+.deleteIcon {
+    height: 4rem;
+    width: 4rem;
+}

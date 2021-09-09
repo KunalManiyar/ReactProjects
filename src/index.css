@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main-div {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(17, 100, 207, 0.918);
+  display: grid;
+  place-items: center;
+}
+
+.center-div {
+  position: relative;
+  height: 80%;
+  width: 30%;
+  background-color: white;
+  border-radius: 3rem;
+
+
+}
+
+h1 {
+  color: white;
+  width: 100%;
+  background-color: rgb(228, 16, 228);
+  text-align: center;
+  font-size: 4rem;
+  line-height: normal;
+  margin-top: 2.5rem;
+  vertical-align: middle;
+}
+
+input {
+  position: absolute;
+  height: 3rem;
+  width: 60%;
+  top: 8rem;
+  left: 50%;
+  transform: translateX(-60%);
+  font-size: 2rem;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid rgb(228, 16, 228);
+  outline: none;
+  margin: 1rem auto;
+}
+
+.submit {
+  position: absolute;
+  top: 9rem;
+  left: 80%;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  background-color: rgb(228, 16, 228);
+  outline: none;
+  color: white;
+  border: none;
+  font-size: 3rem;
+}
+
+.submit:hover {
+  background-color: rgb(117, 231, 117);
+}
+
+ol {
+  position: absolute;
+
+  top: 15rem;
+  left: 4rem;
+}
+
+.listItem {
+  margin-bottom: 1rem;
+}
+
+.listItem li {
+  text-transform: capitalize;
+  font-size: 2rem;
+  list-style: none;
+  display: inline-block;
+  margin-left: 2rem;
+
+}
+
+.cross {
+  background-color: rgb(160, 38, 38);
+  color: white;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 1rem;
+  display: inline-block;
+  font-size: 3rem;
+  border: none;
+  cursor: pointer;
+}

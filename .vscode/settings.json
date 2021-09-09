@@ -1,0 +1,7 @@
+{
+  "html.format.contentUnformatted": "pre,code,textarea",
+  "editor.formatOnType": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "typescript.autoClosingTags": false
+}

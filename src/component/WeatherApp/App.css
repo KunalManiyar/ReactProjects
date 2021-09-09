@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&display=swap');
+
+* {
+    font-family: 'Josefin Sans',
+        sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+#root {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.box {
+    position: relative;
+    height: 50rem;
+    width: 40rem;
+    border-radius: 2rem;
+    background-color: rgb(120, 180, 236);
+}
+
+.inputData {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+.inputField {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+}
+
+.info {
+    height: 90%;
+    width: 100%;
+    text-align: center;
+    margin-top: 8rem;
+
+}
+
+.location {
+    font-size: 7rem;
+}
+
+
+.temp {
+    font-size: 5rem;
+    color: white;
+    margin: 0;
+}
+
+.tempmin_max {
+    font-size: 3rem;
+    color: white;
+    margin: 0;
+}
